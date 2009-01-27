@@ -1,0 +1,35 @@
+=About
+
+Keypress observer monitors a document's keypress event issues a callback if it matches our specified key combo.
+It supports multiple modifier keys and can be set to _specific_ key combinations in a more human-readable format.
+
+Author:: Rob Hurring <rob@zerobased.com>
+Homepage:: http://github.com/robhurring
+Date:: 1/27/09
+
+=Options
+
+Keypress.observe accepts:
+
+	shift:: 	we want the SHIFT key down
+	alt:: 		we want the ALT key down
+	control:: we want the CTRL key down
+	meta:: 		we want the META key down
+
+=Usage
+
+	// monitor ctrl-shift-G
+	new Keypress.observe(Ansi.G, function(e)
+	{
+		alert('Do something');
+	},{shift:true, control:true});
+  
+	// monitor ctrl-meta-shift-P
+	new Keypress.observe(Ansi.P, function(e)
+	{
+		print_document();
+	}, {control:true, meta:true, shift:true});
+
+=Dependencies
+
+written against Prototype 1.6.0.1
