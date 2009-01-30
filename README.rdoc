@@ -13,7 +13,7 @@ Keypress.observe accepts:
 
 	shift:: 	we want the SHIFT key down
 	alt:: 		we want the ALT key down
-	control::we want the CTRL key down
+	control:: we want the CTRL key down
 	meta:: 	we want the META key down
 
 =Usage
